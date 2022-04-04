@@ -596,7 +596,7 @@ class Invoice implements Arrayable, Jsonable, JsonSerializable
      */
     public function view(array $data)
     {
-        return View::make('cashier::receipt', array_merge($data, [
+        return View::make(config('cashier.invoices.receipt_view'), array_merge($data, [
             'invoice' => $this,
             'owner' => $this->owner,
             'user' => $this->owner,

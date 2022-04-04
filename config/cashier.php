@@ -105,6 +105,7 @@ return [
             // Supported: 'letter', 'legal', 'A4'
             'paper' => env('CASHIER_PAPER', 'letter'),
         ],
+        'receipt_view' => env('CASHIER_RECEIPT_VIEW','cashier::receipt')
     ],
 
     /*
